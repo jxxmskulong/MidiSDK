@@ -21,5 +21,5 @@ Pod::Spec.new do |s|
   s.framework = 'CoreGraphics','MessageUI','QuartzCore','SystemConfiguration','AdSupport'
   s.source_files = "midi_sdk/include/*.{h,m}"
   s.vendored_libraries = 'midi_sdk/*.a'
-  s.resource = "midi_sdk/images"
+  s.resource = 'midi_sdk/images/*.*'
 end
