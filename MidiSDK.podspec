@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   #s.resource_bundles = { 'Resource' => ['Core/Resource.bundle/**/*.png'], 'ShareSDKiPadDefaultShareViewUI' => ['UI/ShareSDKiPadDefaultShareViewUI.bundle/**/*.png'],'ShareSDKiPadSimpleShareViewUI' => ['UI/ShareSDKiPadSimpleShareViewUI.bundle/**/*.png'],'ShareSDKiPhoneDefaultShareViewUI' => ['UI/ShareSDKiPhoneDefaultShareViewUI.bundle/**/*.png'],'ShareSDKiPhoneSimpleShareViewUI' => ['UI/ShareSDKiPhoneSimpleShareViewUI.bundle/**/*.png'] }
   #s.source_files = "Extend/**/*.{h,m}"
   #s.resources = ["Core/**/*.strings","**/*.bundle"]
-  s.framework = 'CoreGraphics','MessageUI','QuartzCore','SystemConfiguration','AdSupport'
+  s.framework = 'CoreGraphics','MessageUI','QuartzCore','SystemConfiguration','AdSupport','ImageIO','MapKit',' Security'
   s.source_files = "midi_sdk/include/*.{h,m}"
   s.vendored_libraries = 'midi_sdk/*.a'
   s.resource = 'midi_sdk/images/*.*'
