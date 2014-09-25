@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "5.0"
 
   s.name         = 'MidiSDK'
-  s.version      = '1.5.1'
+  s.version      = '1.5.2'
   s.license      =  { :type => 'MIT', :file => 'LICENSE' }
   s.homepage     = 'https://github.com/shijian3011/MidiSDK'
   s.authors      =  { 'Health Shi' => 'shijian3011@qq.com' }
@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
   #s.source_files = "Extend/**/*.{h,m}"
   #s.resources = ["Core/**/*.strings","**/*.bundle"]
   s.framework = 'CoreGraphics','MessageUI','QuartzCore','SystemConfiguration','AdSupport'
-  s.source_files = "midi_sdk/*.{h,m}"
+  s.source_files = "midi_sdk/include/*.{h,m}"
   s.vendored_libraries = 'midi_sdk/*.a'
+  s.resource = "midi_sdk/images"
 end
